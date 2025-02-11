@@ -200,7 +200,6 @@ body{
     }
 }
 
-
 @keyframes left_to_rigth {
     0% {
         transform: translateX(-100px);
@@ -255,7 +254,6 @@ body{
         opacity: 1;
     }
 }
-
 
 @keyframes fade_in {
     

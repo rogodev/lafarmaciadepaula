@@ -1,0 +1,23 @@
+/**Custom Shape Divider**/
+
+.shape-divider {
+    position: absolute;
+    bottom: 28vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.shape-divider1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.2px);
+    height: 200px;
+}
+
+.shape-divider .shape-fill {
+    fill: #FFFFFF;
+}

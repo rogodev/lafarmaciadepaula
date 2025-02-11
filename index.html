@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmacia Cabello</title>
-    <link rel="icon" href="Assets/IMG/Icons/farmacia_logo.ico" type="image/x-icon" sizes="32x32">
+    <link rel="icon" href="Assets/IMG/Icons/Logo_Farmaceuticos_Ico.png" type="image/x-icon" sizes="32x32">
     <link rel="stylesheet" href="Assets/CSS/main_style.css">
     <link rel="stylesheet" href="Assets/CSS/scrollbar_style.css">
+    <link rel="stylesheet" href="Assets/CSS/button_styles.css">
+    <link rel="stylesheet" href="Assets/CSS/shapes_styles.css">
+    <link rel="stylesheet" href="Assets/CSS/floating_containers.css">
 </head>
 <body>
     
@@ -16,20 +19,20 @@
             <nav class="header-nav">
                 <div class="header-nav-logo">
                     <figure class="header-nav-logo-figure">
-                        <img class="header-logo" src="Assets/IMG/Icons/farmacia_logo_transparent2.png" alt="Logo de LaFarmaciaDePaula">
+                        <img class="header-logo" src="Assets/IMG/Icons/FarmaciaPaula_Horizontal_Rosa.png" alt="Logo de LaFarmaciaDePaula">
                     </figure>
                 </div>
                 <div class="header-nav-navigation-list">
                     <ul class="haeder-nav-list">
-                        <li><a class="hover-main-color" href="">Home</a></li>
-                        <li><a class="hover-main-color" href="">Services</a></li>
-                        <li><a class="hover-main-color" href="">Shop</a></li>
-                        <li><a class="hover-main-color" href="">About</a></li>
-                        <li><a class="hover-main-color" href="">Contact</a></li>
+                        <li><a class="hover-main-color" href="">La Farmacia</a></li>
+                        <li><a class="hover-main-color" href="">Servicios</a></li>
+                        <li><a class="hover-main-color" href="">Tienda</a></li>
+                        <li><a class="hover-main-color" href="">Nosotros</a></li>
+                        <li><a class="hover-main-color" href="">Contacto</a></li>
                         <li>
                             <div class="header-nav-login-buttons">
-                                <button class="css-button-fully-rounded--white">Login</button>
-                                <button class="css-button-fully-rounded--rose">Sing Up</button>
+                                <button class="button-rounded --white">Login</button>
+                                <button class="button-rounded   --rose">Sing Up</button>
                             </div>
                         </li>
                     </ul>
@@ -37,10 +40,11 @@
             </nav>
             <article class="header-resume">
                 <div class="header-main-info">
-                    <h1 class="header-main-info-title"><span>Cuidar tu Salud</span> nunca fue tan fácil</h1>
+                    <h1 class="header-main-info-title"><span>Cuidar tu Salud en Arnedo</span> nunca fue tan fácil</h1>
                     <p>Nuestra farmacia es el lugar ideal para encontrar todo lo que necesitas, con un servicio confiable y cercano a ti.</p>
                     <div class="header-main-info-buttons">
-                        <button class="css-button-sliding-to-left--red">CONTACTO</button>
+                        <button class="button-sliding-to-left --red" 
+                        style="animation: bottom_to_top_slowed 1s ease-in-out;">CONTACTO</button>
                     </div>
                 </div>
                 <div class="header-photo">
@@ -54,18 +58,52 @@
                             <p>Arnedo, La Rioja</p>
                         </div>
                     </div>
+                    <div class="farmacia-icono">
+                        <img src="Assets/IMG/Icons/farmacia_icono.png" alt="Logo de los farmacéuticos">
+                    </div>
+                    <div class="mail-div">
+                        <div class="mail-logo">
+                            <img src="Assets/IMG/Icons/mail.svg" alt="Logo de email">
+                        </div>
+                        <div class="mail-info">
+                            <h2>Contáctanos!</h2>
+                            <p>Estamos a tu disposición!</p>
+                        </div>
+                    </div>
+
+                    <div class="parafarmacia-container">
+                        <div class="parafarmacia-main-info">
+                            <div class="parafarmacia-logo">
+                                <img src="Assets/IMG/Icons/pastillas.png" alt="Logo de email">
+                            </div>
+                            <div class="parafarmacia-info">
+                                <h2>Parafarmacia</h2>
+                                <p>Ofrecemos lo mejor!</p>
+                            </div>
+                        </div>
+                        <button class="button-rounded --green">Tienda aquí!</button>
+                    </div>
                 </div>
             </article>
         </section>
-
-
-
     </header>
-    <div class="custom-shape-divider-bottom-1739197571">
+
+    <div class="shape-divider">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
         </svg>
     </div>
+
+    <section class="brands-container">
+        <h3>Tratamos con las mejores marcas del mercado</h3>
+        <ul class="brands-container-list">
+            <li><img src="Assets/IMG/ParafarmaciaLogos/la-roche-posay-effaclar.png" alt="Effaclar"></li>
+            <li><img src="Assets/IMG/ParafarmaciaLogos/logo-isdin.png" alt="Isdin"></li>
+            <li><img src="Assets/IMG/ParafarmaciaLogos/Avene-Logo.png" alt="Avene"></li>
+            <li><img src="Assets/IMG/ParafarmaciaLogos/LOGO_ADERMA_2020_RVB.png" alt="Aderma"></li>
+            <li><img src="Assets/IMG/ParafarmaciaLogos/cerave-logo-top.webp" alt="CeraVe"></li>
+        </ul>
+    </section>
     
     <main style="height: 100vh; width: 100vw;">
 

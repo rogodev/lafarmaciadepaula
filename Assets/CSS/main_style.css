@@ -8,6 +8,8 @@
     --fifth-color : #732634;
     --sixth-color : #8a6781;
     --black-color : black;
+    --gray-color : #808080;
+    --pink-color : #f07398;
     --cascadia-font : 'Cascadia code',sans_serif;
     --poppins-font : 'Poppins',sans_serif;
 }
@@ -22,6 +24,9 @@ body{
     width: 100vw;
     height: fit-content;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -169,8 +174,9 @@ body{
 }
 .brands-container h3{
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--poppins-font);
+    color: var(--gray-color);
 }
 .brands-container-list{
 
@@ -181,7 +187,8 @@ body{
     gap: 40px;
 }
 .brands-container-list li img{
-    width: 250px;
+    width: 150px;
+
 }
 
 

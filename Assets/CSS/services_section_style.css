@@ -1,0 +1,112 @@
+:root{
+    --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --ring-offset-shadow: 0 0 transparent;
+    --ring-shadow: 0 0 transparent;
+}
+
+
+
+/** SERVICES SECTION **/
+.services-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.services-container{
+    max-width: 70vw;
+    font-family: var(--poppins-font);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.services-resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    flex-wrap: wrap;
+}
+.services-resume h2{
+    color: var(--third-color);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+}
+.services-resume h2 span{
+    color: var(--pink-color);
+}
+.services-container p{
+    width: 65%;
+    padding: 15px;
+    color: var(--gray-color);
+}
+.services-cards{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+.services-card{
+    width: 30%;
+    border-radius: 15px;
+    min-height: 20vh;
+    background-color: white;
+    box-shadow: var(--ring-offset-shadow, 0 0 transparent), var(--ring-shadow, 0 0 transparent), var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+.services-card-logo{
+    position:relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: var(--pink-color);
+}
+.services-card-logo figure img{
+    position: absolute;
+    width: 35px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.services-card-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+}
+.services-card-description h3{
+    min-height: 55px;
+    font-weight: normal;
+    color: var(--fifth-color);
+}
+.services-card-description p{
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+/** SERVICES CARD ANIMATION **/
+/* Animación inicial (entrada) */
+.services-card {
+    opacity: 0; /* Invisible */
+    transform: translateY(100px); /* Desplazada hacia abajo */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+/* Animación al hacer scroll hacia abajo */
+.services-card.animate {
+    opacity: 1; /* Visible */
+    transform: translateY(0); /* Posición final */
+}
+/* Animación inversa (salida al desplazarse hacia arriba) */
+.services-card.reverse {
+    opacity: 0; /* Invisible */
+    transform: translateY(50px); /* Desplazada hacia arriba */
+}
+  
+  

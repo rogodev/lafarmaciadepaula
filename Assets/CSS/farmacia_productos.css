@@ -1,0 +1,101 @@
+.farmacia-productos{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.farmacia-container{
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins',sans-serif;
+    padding: 20px;
+}
+.farmacia-prodcutos-info{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-wrap: wrap;
+    text-align: left;
+    gap: 15px;
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: 0.35s ease-in-out;
+}
+.farmacia-prodcutos-info h2{
+    width: 80%;
+    font-weight: normal;
+    font-size: 24px;
+    color: var(--fourth-color);
+}
+.farmacia-prodcutos-info h2 span{
+    color: var(--fifth-color);
+}
+.farmacia-prodcutos-info p{
+    width: 80%;
+    font-size: 16px;
+    text-wrap: wrap;
+    color: var(--dark-gray-color);
+}
+.farmacia-prodcutos-info a{
+    color: var(--dark-gray-color);
+    width: fit-content;
+}
+.farmacia-productos-video {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+    transform: translateX(10%);
+    transition: 0.35s ease-in-out;
+}
+.farmacia-productos-video video{
+    width: 100%;
+    border-radius: 15px;
+    z-index: 10;
+}
+.floating-rectangle{
+    position: absolute;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 10px;
+    animation: fade_in 0.5s ease-in-out,subirBajar 4s infinite ease-in-out;     
+}
+.blue{
+    background-color: var(--sixth-color);
+    top: -0.7rem;
+    left: -0.8rem;
+}
+.orange{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--third-color);
+    bottom: -1.4rem;
+    right: -.8rem;
+}
+
+.rigth-appear-in{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.rigth-appear-out{
+    transform: translateX(10%);
+    opacity: 0;
+}
+
+.left-appear-in{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.left-appear-out{
+    transform: translateX(10%);
+    opacity: 0;
+}
+

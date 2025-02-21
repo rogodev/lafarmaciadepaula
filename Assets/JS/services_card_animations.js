@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     }, {
-      threshold: 0.5, // 50% visible para entrar
+      threshold: 0.3, // 50% visible para entrar
     });
 
     // Observador para la animación de salida (scroll hacia arriba)
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     }, {
-      threshold: 0.3, // 10% visible para salir
+      threshold: 0.2, // 10% visible para salir
     });
 
     // Observar cada tarjeta con ambos observadores
@@ -36,4 +36,5 @@ document.addEventListener("DOMContentLoaded", () => {
       observerIn.observe(card); // Para la animación de entrada
       observerOut.observe(card); // Para la animación de salida
     });
-  });
+
+});
